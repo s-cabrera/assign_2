@@ -42,6 +42,8 @@ void CommandExecute::execute(){
         {  sta=this->run(tmp);
             //if (sta==false){}}
         }
+       if (this->connector.empty()==false)
+       {
             if (this->connector[i]==';'){
                 this->status=true;
                // cout <<"hi ;"<<endl;
@@ -66,7 +68,7 @@ void CommandExecute::execute(){
              //   this->status=false;
            // }
        
-    }
+    }}
 
 }
 

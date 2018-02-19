@@ -19,13 +19,12 @@ int main() {
     cout<<"$ ";
     test.getData();
     cout<<test.retrieveData()<<endl;
-   if(test.retrieveData() == Exit){
+   if(test.retrieveData() ==Exit){
       return 0;
    }   
    else{ 
     CommandExecute *instance=new Command;
     instance->parse(test.retrieveData());
-  //  instance->p();
     cout<<endl;
     instance->execute();
     

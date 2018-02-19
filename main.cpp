@@ -13,12 +13,16 @@ using namespace std;
 
 int main() {
  
+   GetInput test;
 
+ do{
     cout<<"$ ";
-    GetInput test;
     test.getData();
     cout<<test.retrieveData()<<endl;
-    
+   if(test.retrieveData() == Exit){
+      return 0;
+   }   
+   else{ 
     CommandExecute *instance=new Command;
     instance->parse(test.retrieveData());
   //  instance->p();
@@ -26,5 +30,7 @@ int main() {
     instance->execute();
     
     cout<<endl;
- 
+   }
+  }while(test.retrieveData() != "Exit");
+
 }

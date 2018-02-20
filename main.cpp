@@ -19,12 +19,14 @@ int main() {
    GetInput test;
 
  do{
+// It gets user data and continues to do so until the user inputs "Exit"
     cout<<"$ ";
     test.getData();
    if(test.retrieveData() =="Exit"){
       return 0;
    }   
    else{ 
+// If the user does not exit, it will parse the data and then execute accordingly
     CommandExecute *instance=new Command;
     instance->parse(test.retrieveData());
     cout<<endl;

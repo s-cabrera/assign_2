@@ -8,18 +8,21 @@
 #include "Command.hpp"
 
 
+
 using namespace std;
 
 
 int main() {
  
+   
+    
    GetInput test;
 
  do{
     cout<<"$ ";
     test.getData();
     cout<<test.retrieveData()<<endl;
-   if(test.retrieveData() ==Exit){
+   if(test.retrieveData() =="Exit"){
       return 0;
    }   
    else{ 

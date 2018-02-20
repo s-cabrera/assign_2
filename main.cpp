@@ -21,7 +21,6 @@ int main() {
  do{
     cout<<"$ ";
     test.getData();
-    cout<<test.retrieveData()<<endl;
    if(test.retrieveData() =="Exit"){
       return 0;
    }   

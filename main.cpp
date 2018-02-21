@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
 
-cout<<"Type 'Exit'"<<endl;
+cout<<"To exit progrm type 'Exit'"<<endl;
     
    GetInput test;
 

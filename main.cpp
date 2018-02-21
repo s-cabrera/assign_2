@@ -7,10 +7,7 @@
 #include <sys/wait.h>
 #include "Command.hpp"
 
-
-
 using namespace std;
-
 
 int main() {
 

@@ -13,8 +13,8 @@ using namespace std;
 
 
 int main() {
- 
-   
+
+cout<<"Type 'Exit'"<<endl;
     
    GetInput test;
 
